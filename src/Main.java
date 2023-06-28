@@ -20,27 +20,27 @@ public class Main {
 
         System.out.println("\nSample Output:");
         System.out.println("Using Linear Search:");
-        long linearStartTime = System.nanoTime();
+        //long linearStartTime = System.nanoTime();
         int linearAnswer = linearSearch(array, keyInput);
-        long linearEndTime   = System.nanoTime();
-        long linearTotalTime = linearEndTime - linearStartTime;
+        //long linearEndTime   = System.nanoTime();
+        //long linearTotalTime = linearEndTime - linearStartTime;
         if (linearAnswer != -1){
             System.out.println("Search key FOUND at index " + linearAnswer + ".");
         } else {
             System.out.println("Search key NOT FOUND");
         }
-        System.out.println("Running time of linear algorithm is: " + linearTotalTime+ "\n\n");
-        System.out.println("Using Interpolation Search:");
-        long interpolationStartTime = System.nanoTime();
+        //System.out.println("Running time of linear algorithm is: " + linearTotalTime+ "\n");
+        System.out.println("\\nUsing Interpolation Search:");
+        //long interpolationStartTime = System.nanoTime();
         int interpolationAnswer = interpolationSearch(array, keyInput);
-        long interpolationEndTime = System.nanoTime();
-        long interpolationTotalTime = interpolationEndTime - interpolationStartTime;
+        //long interpolationEndTime = System.nanoTime();
+        //long interpolationTotalTime = interpolationEndTime - interpolationStartTime;
         if (interpolationAnswer != -1){
             System.out.println("Search key FOUND at index " + interpolationAnswer + ".");
         } else {
             System.out.println("Search key NOT FOUND");
         }
-        System.out.println("Running time of interpolation algorithm is: " + interpolationTotalTime+ "");
+        //System.out.println("Running time of interpolation algorithm is: " + interpolationTotalTime+ "");
 
 
     }
