@@ -30,16 +30,22 @@ public class Main {
             System.out.println("Search key NOT FOUND");
         }
         //System.out.println("Running time of linear algorithm is: " + linearTotalTime+ "\n");
-        System.out.println("\\nUsing Interpolation Search:");
-        //long interpolationStartTime = System.nanoTime();
-        int interpolationAnswer = interpolationSearch(array, keyInput);
-        //long interpolationEndTime = System.nanoTime();
-        //long interpolationTotalTime = interpolationEndTime - interpolationStartTime;
-        if (interpolationAnswer != -1){
-            System.out.println("Search key FOUND at index " + interpolationAnswer + ".");
-        } else {
+        System.out.println("\nUsing Interpolation Search:");
+
+        try {
+            //long interpolationStartTime = System.nanoTime();
+            int interpolationAnswer = interpolationSearch(array, keyInput);
+            //long interpolationEndTime = System.nanoTime();
+            if (interpolationAnswer != -1){
+                System.out.println("Search key FOUND at index " + interpolationAnswer + ".");
+            } else {
+                System.out.println("Search key NOT FOUND");
+            }
+        }catch (Exception e){
             System.out.println("Search key NOT FOUND");
         }
+
+        //long interpolationTotalTime = interpolationEndTime - interpolationStartTime;
         //System.out.println("Running time of interpolation algorithm is: " + interpolationTotalTime+ "");
 
 
